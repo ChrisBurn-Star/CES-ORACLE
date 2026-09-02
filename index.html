@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal homepage for a researcher working on large language models and recommendation systems." />
+    <meta name="theme-color" content="#f4f1e8" />
+    <title>Your Name — AI Researcher</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark" aria-hidden="true">⌁</span>
+        <span data-field="shortName">YOUR NAME</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#writing">Writing</a>
+        <a href="#education">Education</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+        <span class="theme-label">Dark</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span><span data-field="status">OPEN TO COLLABORATION</span></div>
+          <p class="hero-kicker" data-field="role">Researcher · Engineer · Builder</p>
+          <h1 id="hero-title">
+            <span>Hello, I am</span>
+            <strong data-field="name">Your Name</strong>
+          </h1>
+          <p class="hero-intro" data-field="intro">
+            I study the architectures, optimization methods, and foundational principles behind large-scale AI systems.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#writing">Read my work <span aria-hidden="true">↘</span></a>
+            <button class="button button-secondary copy-email" type="button">
+              <span>Copy email</span><span aria-hidden="true">⎘</span>
+            </button>
+          </div>
+        </div>
+
+        <aside class="profile-card reveal" aria-label="Profile card">
+          <div class="avatar">
+            <img src="./jixian-zhou.jpg" alt="Portrait of Jixian Zhou" />
+          </div>
+          <div class="profile-card-body">
+            <span class="index-label">PROFILE / AT A GLANCE</span>
+            <dl id="profile-list"></dl>
+          </div>
+          <div class="profile-card-footer">
+            <span data-field="location">China · City</span>
+            <span class="live-indicator">LOCAL TIME <b id="local-time">--:--</b></span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="marquee" aria-label="Research keywords">
+        <div class="marquee-track" id="marquee-track"></div>
+      </section>
+
+      <section class="about section-shell section-grid" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <span class="section-number">01</span>
+          <p class="eyebrow">ABOUT / PROFILE</p>
+          <h2 id="about-title">Finding important questions<br />between theory and practice.</h2>
+        </div>
+        <div class="about-content reveal">
+          <p class="about-lead" data-field="aboutLead">A concise statement of your technical identity, core strengths, and the problems you care about most.</p>
+          <div id="about-paragraphs" class="body-copy"></div>
+          <div class="principle">
+            <span class="principle-mark">“</span>
+            <blockquote data-field="motto">Stay curious, keep building, and make complex ideas clear.</blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="research section-shell" id="research" aria-labelledby="research-title">
+        <div class="section-heading horizontal reveal">
+          <div>
+            <span class="section-number">02</span>
+            <p class="eyebrow">RESEARCH / INTERESTS</p>
+          </div>
+          <h2 id="research-title">What I'm exploring</h2>
+        </div>
+        <div class="research-grid" id="research-grid"></div>
+      </section>
+
+      <section class="writing section-shell" id="writing" aria-labelledby="writing-title">
+        <div class="section-heading reveal">
+          <span class="section-number">03</span>
+          <p class="eyebrow">SELECTED WRITING / PUBLICATIONS</p>
+          <h2 id="writing-title">Thinking deeply,<br />writing clearly.</h2>
+        </div>
+        <div class="articles" id="articles-list"></div>
+      </section>
+
+      <section class="education section-shell" id="education" aria-labelledby="education-title">
+        <div class="section-heading horizontal reveal">
+          <div>
+            <span class="section-number">04</span>
+            <p class="eyebrow">EDUCATION / BACKGROUND</p>
+          </div>
+          <h2 id="education-title">Academic journey</h2>
+        </div>
+        <div class="timeline" id="education-list"></div>
+      </section>
+
+      <section class="contact section-shell reveal" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">CONTACT / GET IN TOUCH</p>
+          <h2 id="contact-title">Have a question worth<br />exploring together?</h2>
+        </div>
+        <div class="contact-action">
+          <a class="email-link" data-field="emailLink" href="mailto:hello@example.com">
+            <span data-field="email">hello@example.com</span><span aria-hidden="true">↗</span>
+          </a>
+          <p data-field="contactNote">If you are interested in my research, writing, or a potential collaboration, feel free to reach out.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <p>© <span id="current-year"></span> <span data-field="name">Your Name</span></p>
+      <p>DESIGNED FOR CLEAR THINKING <span class="footer-mark">⌁</span></p>
+      <a href="#top">BACK TO TOP ↑</a>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
+    <script src="./content.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
