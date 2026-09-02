@@ -23,8 +23,8 @@ window.PROFILE_DATA = {
 
   aboutLead: "I am an Advertising LLM Algorithm Engineer at Kuaishou, working at the intersection of language modeling, recommendation, and representation learning.",
   aboutParagraphs: [
-    "Use this paragraph for a fuller introduction to your research background, technical experience, and the questions that have shaped your work. A concise paragraph of 60–100 words works well here.",
-    "Use the second paragraph to describe how you approach research, what kind of impact you want your work to have, and the collaborations or opportunities you are currently looking for.",
+    "My research focuses on efficient and principled Mixture-of-Experts systems for large language models. In Oracle-MoE (ICML 2025), I explored locality-preserving routing to reduce expert swapping and accelerate inference under tight memory budgets. In Once Read is Enough (NeurIPS 2024), I studied cluster-guided sparse experts that help language models capture long-tail domain knowledge without costly domain-specific pretraining.",
+    "At Kuaishou, I work as an Advertising LLM Algorithm Engineer, connecting fundamental questions in representation learning and MoE dynamics with large-scale recommendation. I am particularly interested in architectures and training strategies that make foundation models more scalable, efficient, and effective in real-world systems.",
   ],
   motto: "Stay curious, keep building, and make complex ideas clear.",
 
